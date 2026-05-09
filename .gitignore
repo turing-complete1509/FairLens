@@ -1,0 +1,48 @@
+# ========================
+# FairLens — .gitignore
+# ========================
+
+# --- Dataset (large binary, not for VCS) ---
+els_02_12_byf3pststu_v1_0.csv
+*.csv
+!pipeline/utils/generate_biased_data.py
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+.env
+*.env
+
+# Generated output files
+feature_selection_report.txt
+post_cleaning_checkpoint.csv
+cleaned_imputed_*.csv
+debiased_dataset.csv
+biased_hiring_dataset.csv
+
+# --- Node / Dashboard ---
+dashboard/node_modules/
+dashboard/dist/
+dashboard/.env
+dashboard/.env.local
+dashboard/.env.*.local
+
+# --- Editor / OS ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
